@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/insurancePlanWidget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/insurance_plan_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/insurance_card_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/planImage"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/imageAlt"
+                app:srcCompat="@drawable/insurance_plan_device" />
+
+            <LinearLayout
+                android:id="@+id/cardLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/planName"
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/planDescrisption"
+                    android:layout_width="match_parent"
+                    android:layout_height="333dp"
+                    android:text="textView3" />
+
+                <TextView
+                    android:id="@+id/planTenure"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/planPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CustomerDetailsForm.CustomerFormFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/custmerformconstrained"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_bg">
+
+
+        <TextView
+            android:id="@+id/cust_insur_tenure"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cust_text_margin"
+            android:gravity="center"
+            android:text="Tenure :"
+            android:textColor="@color/cust_text_color"
+            android:textSize="@dimen/cust_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/cust_device_number"
+            app:layout_constraintStart_toStartOf="@+id/cust_device_number"
+            app:layout_constraintTop_toBottomOf="@+id/cust_device_number" />
+
+        <EditText
+            android:id="@+id/cust_edit_device_number"
+
+            android:autofillHints=""
+            android:background="@color/white"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/cust_device_number"
+            app:layout_constraintEnd_toEndOf="@+id/cust_edit_device_name"
+            app:layout_constraintStart_toStartOf="@+id/cust_edit_device_name"
+            app:layout_constraintTop_toTopOf="@+id/cust_device_number" />
+
+        <EditText
+            android:id="@+id/cust_insure_tenure"
+
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:autofillHints=""
+            android:background="@color/white"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/cust_insur_tenure"
+            app:layout_constraintEnd_toEndOf="@+id/cust_edit_device_number"
+            app:layout_constraintStart_toStartOf="@+id/cust_edit_device_number"
+            app:layout_constraintTop_toBottomOf="@+id/cust_edit_device_number" />
+
+        <TextView
+            android:id="@+id/cust_device_name"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cust_text_margin"
+            android:gravity="center"
+            android:text="Device Name:"
+            android:textColor="@color/cust_text_color"
+            android:textSize="@dimen/cust_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/cust_phone"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/cust_phone"
+            app:layout_constraintTop_toBottomOf="@+id/cust_phone" />
+
+        <TextView
+            android:id="@+id/cust_device_number"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Device Number:"
+            android:textColor="@color/cust_text_color"
+            android:textSize="@dimen/cust_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/cust_device_name"
+            app:layout_constraintStart_toStartOf="@+id/cust_device_name"
+            app:layout_constraintTop_toBottomOf="@+id/cust_device_name" />
+
+        <TextView
+            android:id="@+id/cust_phone"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cust_text_margin"
+            android:gravity="center"
+            android:text="PhoneNumber:"
+            android:textColor="@color/cust_text_color"
+            android:textSize="@dimen/cust_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/cust_address"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cust_address"
+            app:layout_constraintTop_toBottomOf="@+id/cust_address" />
+
+        <TextView
+            android:id="@+id/cust_address"
+            android:layout_width="152dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/cust_text_margin"
+            android:gravity="center"
+            android:text="Address :"
+            android:textColor="@color/cust_text_color"
+            android:textSize="@dimen/cust_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/cust_email"
+            app:layout_constraintStart_toStartOf="@+id/cust_email"
+            app:layout_constraintTop_toBottomOf="@+id/cust_email" />
+
+        <TextView
+            android:id="@+id/customer_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="@string/cust_page"
+            android:textColor="@color/cust_text_color"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cust_name"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/cust_name"
+            android:layout_width="153dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/cust_text_height"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/custname"
+            android:textColor="@color/cust_text_color"
+            android:textSize="@dimen/cust_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/cust_email"
+            app:layout_constraintStart_toStartOf="@+id/customer_details"
+            app:layout_constraintTop_toBottomOf="@+id/customer_details" />
+
+        <EditText
+            android:id="@+id/cust_edit_name"
+            android:layout_width="204dp"
+            android:layout_height="32dp"
+            android:autofillHints=""
+            android:background="@color/white"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/cust_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toEndOf="@+id/cust_name"
+            app:layout_constraintTop_toTopOf="@+id/cust_name"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/cust_email"
+            android:layout_height="34dp"
+            android:layout_marginTop="@dimen/cust_text_margin"
+            android:gravity="center"
+            android:text="Email :"
+            android:textColor="@color/cust_text_color"
+            android:textSize="@dimen/cust_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/cust_name"
+            app:layout_constraintStart_toStartOf="@+id/cust_name"
+            app:layout_constraintTop_toBottomOf="@+id/cust_name" />
+
+        <EditText
+            android:id="@+id/cust_edit_email"
+            android:layout_width="212dp"
+            android:layout_height="34dp"
+            android:autofillHints=""
+            android:background="@color/white"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/cust_email"
+            app:layout_constraintEnd_toEndOf="@+id/cust_edit_name"
+
+            app:layout_constraintStart_toStartOf="@+id/cust_edit_name"
+            app:layout_constraintTop_toTopOf="@+id/cust_email" />
+
+        <EditText
+            android:id="@+id/cust_edit_address"
+            android:autofillHints=""
+            android:background="@color/white"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/cust_address"
+
+            app:layout_constraintEnd_toEndOf="@+id/cust_edit_email"
+            app:layout_constraintStart_toStartOf="@+id/cust_edit_email"
+            app:layout_constraintTop_toTopOf="@+id/cust_address" />
+
+        <EditText
+            android:id="@+id/cust_edit_phone"
+            android:autofillHints=""
+
+            android:background="@color/white"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/cust_phone"
+            app:layout_constraintEnd_toEndOf="@+id/cust_edit_address"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/cust_edit_address"
+            app:layout_constraintTop_toTopOf="@+id/cust_phone"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/cust_edit_phone4"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@color/white"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/cust_phone"
+            app:layout_constraintEnd_toEndOf="@+id/cust_edit_address"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/cust_edit_address"
+            app:layout_constraintTop_toTopOf="@+id/cust_phone"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/cust_edit_device_name"
+
+            android:autofillHints=""
+            android:background="@color/white"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/cust_device_name"
+            app:layout_constraintEnd_toEndOf="@+id/cust_edit_phone"
+            app:layout_constraintStart_toStartOf="@+id/cust_edit_phone"
+            app:layout_constraintTop_toTopOf="@+id/cust_device_name" />
+
+        <Button
+            android:id="@+id/cust_Insurance_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="@dimen/cust_text_margin"
+            android:text="Register"
+            app:barrierMargin="@dimen/cust_text_margin"
+            app:layout_constraintEnd_toEndOf="@+id/cust_insure_tenure"
+            app:layout_constraintStart_toStartOf="@+id/cust_insure_tenure"
+            app:layout_constraintTop_toBottomOf="@+id/cust_insure_tenure" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
